@@ -1,0 +1,57 @@
+﻿1.What is an interface in Java?
+
+
+Ans:An interface in Java is a reference type that is similar to a class. It is a collection of abstract methods. In Java, an interface can contain both abstract methods and constants. It provides a way to achieve abstraction and multiple inheritance in Java.
+
+
+2.Which modifiers are allowed for methods in an interface? Explain with an example.
+
+
+Ans:In an interface, the allowed modifiers for methods are:
+
+
+public: Methods are implicitly public.
+abstract: Methods are implicitly abstract.
+Here's an example:
+
+
+java
+Copy code
+public interface ExampleInterface {
+    // Implicitly public and abstract method
+    void exampleMethod();
+
+
+    // Constant in an interface
+    int MAX_VALUE = 100;
+}
+In this example, exampleMethod is implicitly public and abstract. The constant MAX_VALUE is an example of a constant in an interface.
+
+
+3.What is the use of an interface in Java? Or, why do we use an interface in Java?
+
+
+Ans:Achieving Abstraction: Interfaces allow the declaration of abstract methods without providing their implementation. It enables abstraction by hiding the internal details of how methods are implemented.
+Achieving Multiple Inheritance: A class can implement multiple interfaces, enabling a form of multiple inheritance in Java.
+Defining Contracts: Interfaces define a contract that implementing classes must adhere to. This ensures that classes implementing the interface provide specific functionality.
+
+
+4.What is the difference between an abstract class and an interface in Java?
+Ans:
+Abstract Class:
+
+
+Can have both abstract and concrete methods.
+Can have instance variables (fields).
+Supports constructor.
+Allows access modifiers for methods (public, private, protected).
+A class can extend only one abstract class.
+Interface:
+
+
+Can have only abstract methods (before Java 8).
+Can only have constant variables (final and static) before Java 8.
+No constructor support.
+All methods are implicitly public and abstract.
+A class can implement multiple interfaces.
+Both abstract classes and interfaces support achieving abstraction and defining contracts for implementing classes, but they are used in different contexts based on the requirements of the design.
